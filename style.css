@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+}
+header {
+    background-color: #3958ff;
+    padding: 3em 3em;
+}
+header h1 {
+    color: rgb(241, 241, 241);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+header p {
+    margin: 1em 0 ;
+    color: white;
+}
+nav ul li {
+    display: inline-block;
+    margin: 1em;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    text-decoration: underline;
+}
+.main {
+    padding: 3em;
+    background-image: linear-gradient(170deg, #ffffcb 0, #f8e49b 50%, #d6c06c 100%);
+}
+.marginTop {
+    margin-top: -5em;
+}
+.containerFiguras {
+    background-color: white;
+}
+.containerFiguras > div {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+}
+.containerFiguras > div h2 {
+    text-align: center;
+    color: black;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+.containerCuadrado {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    padding: 2em;
+    margin: 2em;
+}
+.containerCuadrado h2 {
+    color: #393778;
+}
+form {
+    text-align: center;
+}
+input {
+    padding: .5em 1em;
+    border: none;
+    margin: 1em 0;
+    outline: none;
+    border-bottom: 1px solid #cbcacf;
+    width: 90%;
+}
+input:focus {
+    border-bottom: 1px solid #3b58fc;
+}
+button {
+    width: 100%;
+    margin: .5em 0;
+    padding: .5em 1em;
+    border: none;
+    color: white;
+    background: #3b58fc;
+    border: 1px solid #3958ff;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 0 0 15px rgb(197, 197, 197);
+    margin: 0 auto;
+    cursor: pointer;
+}
+button:hover {
+    border: 1px solid #3b58fc;
+    color: #3b58fc;
+    background-color: white;
+}
+
+/*  porcentaje de descuentos  */
+.bgContainer {
+    background-color: white;
+    box-shadow: 0 0 15px grey;
+    padding: 4em 2em;
+    position: relative;
+}
+.containerDiscount {
+    display: flex;
+    justify-content: center;
+}
+.containerDiscount .contentForm, .containerDiscount  .contentImage{
+    width: 100%;
+    margin-left: 1em;
+}
+.containerForm form {
+    background-color: white;
+}
+.containerForm {
+    text-align: center;;
+}
+.styleTitle{
+    color: #393778;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.resultPrecio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #3f9450;
+    color: white;
+    padding: 1em;
+}
+.contentImage {
+    position: relative;
+}
+.containerImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PorcentajeDescuento{
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e62952;
+    padding: 0 .2em;
+}
+.containerImage {
+    margin: 0 auto;
+    text-align: center;
+}
+.containerImage img{
+    width: 60%;
+}
+.priceOld, .newPrice {
+    font-size: 1.5em;
+}
+.priceOld {
+    text-decoration: line-through;
+    color: grey;
+}
+.newPrice {
+    color: #3b58fc;
+    font-weight: bold;
+
+}
+

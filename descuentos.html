@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Segundo Taller Práctico de JS</p>
+        <nav>
+            <ul>
+                <li><a href="figuras.html">Taller 1</a></li>
+                <li><a href="descuentos.html">Taller 2</a></li>
+                <li><a href="promedio.html">Taller 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <section class="containerDiscount">
+            <div class="marginTop bgContainer contentForm">
+                <div class="containerForm">
+                    <h2 class="styleTitle">Calcula el descuento de un producto</h2>
+                    <form action="">
+                        <label for="inputPrice">
+                            <input type="number" id="inputPrice" placeholder="Escribe el precio del producto">
+                        </label>
+                        <label for="inputDiscount">
+                            <input type="number" id="inputDiscount" placeholder="Escribe el descuento por aplicar">
+                        </label>
+                        <label for="inputCupon">
+                            <input type="text" id="inputCupon" placeholder="Ingresa código del cupón">
+                        </label>
+                        <button type="button" onclick="obtenerValores()">Calcular Precio</button>
+                    </form>
+                </div>
+            </div>
+            <div class="bgContainer marginTop contentImage">
+                <div class="headerContainerProduct">
+                    <h2 class="styleTitle">Producto</h2>
+                    <p class="PorcentajeDescuento"><span id="PorcentajeDescuento"></span>%</p>
+                </div>
+                <div class="containerImage">
+                    <figure>
+                        <img src="https://pngimg.com/uploads/iphone_12/iphone_12_PNG23.png" alt="">
+                    </figure>
+                </div>
+                <div class="containerImage">
+                    <p class="priceOld"> Precio Anterior: $<span  id="priceOld"></span></p>
+                    <p class="newPrice"> Nuevo Precio: $<span  id="newPrice"></span> </p>
+                </div>
+            </div>
+        </section>  
+    </div>
+    <script src="descuentos.js"></script>
+</body>
+</html>
